@@ -1,11 +1,11 @@
 sbus_bridge_node:
   ros__parameters:
-    port: "/dev/ttyTHS1"
-    refresh_rate_hz: 5
-    rxMinValue: 172
-    rxMaxValue: 1811
+    port: "/dev/ttyUSB0"
+    refresh_rate_hz: 25
+    rxMinValue: 695
+    rxMaxValue: 1509
     outMinValue: 0
-    outMaxValue: 100000
+    outMaxValue: 1000
     silentOnFailsafe: false
     enableChannelNum: -1
     enableChannelProportionalMin: 0.0

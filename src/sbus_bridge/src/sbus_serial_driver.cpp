@@ -191,16 +191,16 @@ namespace sbus_serial
 		uart_config.c_cflag &= ~(CSIZE | PARODD | CBAUD);
 
 		// Enable parity generation on output and parity checking for input.
-		uart_config.c_cflag |= PARENB;
+		// uart_config.c_cflag |= PARENB;
 		// Set two stop bits, rather than one.
-		uart_config.c_cflag |= CSTOPB;
+		// uart_config.c_cflag |= CSTOPB;
 		// No output processing, force 8 bit input
 		uart_config.c_cflag |= CS8;
 		// Enable a non standard baud rate
 		uart_config.c_cflag |= BOTHER;
 
 		// Set custom baud rate of 100'000 bits/s necessary for sbus
-		const speed_t spd = 100000;
+		const speed_t spd = 115200;
 		uart_config.c_ispeed = spd;
 		uart_config.c_ospeed = spd;
 
